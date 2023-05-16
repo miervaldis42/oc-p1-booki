@@ -435,25 +435,21 @@ a {
 @media (width <= 1024px) {
   .accommodations-and-popular {
     flex-direction: column;
+    gap: 50px;
   }
 
-  .accommodations {
-    width: 100%;
+  #accommodations-section {
+    padding-bottom: 30px;
   }
 
-  .popular {
+  #accommodations-section,
+  #popular-section {
     width: 100%;
-    margin-top: 50px;
   }
 
   .popular-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .popular-cards .card {
-    width: 30%;
+    gap: 20px;
   }
 
   .popular-cards .card-title {
@@ -462,6 +458,25 @@ a {
 
   .popular-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  #activities-section {
+    padding-bottom: 0;
+  }
+
+  #activities-cards-carousel .activities-card {
+    height: 270px;
+  }
+
+  #activities-cards-carousel .activities-card img {
+    height: 200px;
+  }
+
+  #activities-cards-carousel .activities-card .activities-title {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
   }
 }
 
