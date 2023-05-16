@@ -60,6 +60,12 @@ h3 {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -388,6 +394,32 @@ a {
 
 #activities-cards-carousel .activities-card .activities-title {
   padding: 20px 19px;
+}
+
+/****** Footer ******/
+#footer {
+  width: -webkit-fill-available;
+  width: -moz-available;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--main-bg-color);
+
+  padding: 20px;
+}
+
+#footer .footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .footer-section .footer-header,
+#footer .footer-section-navlinks li {
+  padding-bottom: 15px;
+}
+
+#footer .footer-section-navlinks li:last-child {
+  padding: 0;
 }
 
 /****** Media Queries ******/
