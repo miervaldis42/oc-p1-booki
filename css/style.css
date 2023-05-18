@@ -67,6 +67,10 @@ ul {
 }
 
 a {
+  height: fit-content;
+
+  display: block;
+
   text-decoration: none;
 }
 
@@ -95,8 +99,7 @@ a {
 }
 
 .navLink {
-  display: flex;
-  align-items: flex-end;
+  padding: 14px 0;
 }
 
 .navLink:hover {
@@ -482,5 +485,144 @@ a {
 
 /* Small devices */
 @media (320px <= width <= 768px) {
-  /* ... */
+  /* General */
+  body {
+    display: block;
+  }
+
+  a {
+    display: inline;
+  }
+
+  .page-container {
+    padding: 0;
+  }
+
+  /* Header */
+  #header {
+    height: max-content;
+
+    flex-direction: column;
+  }
+
+  #header #logo {
+    margin: 30px 0;
+  }
+
+  #menu {
+    height: fit-content;
+    width: 100%;
+
+    align-self: baseline;
+
+    gap: 0;
+  }
+
+  #menu .navLink {
+    width: -webkit-fill-available;
+    width: -moz-available;
+
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 2px solid var(--border-color);
+
+    padding: 17px;
+  }
+
+  #menu .navLink:hover {
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+  }
+
+  /* Main */
+  .body-container {
+    width: 100%;
+  }
+
+  #info-group {
+    margin: 0 20px;
+  }
+
+  #input-search-container #search-input {
+    width: 100%;
+  }
+
+  #search-text-button {
+    display: none;
+  }
+
+  #input-search-container #search-icon-button {
+    display: block;
+  }
+
+  #filter-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "item-1 item-2"
+      "item-3 item-4";
+    gap: 20px;
+  }
+  .filter-title {
+    grid-area: title;
+  }
+  .item-1 {
+    grid-area: item-1;
+  }
+  .item-2 {
+    grid-area: item-2;
+  }
+  .item-3 {
+    grid-area: item-3;
+  }
+  .item-4 {
+    grid-area: item-4;
+  }
+  #filter-bar .filter {
+    font-size: 14px;
+  }
+
+  /* Accommodations */
+  .accommodations-and-popular {
+    flex-direction: column-reverse;
+
+    gap: 15px;
+  }
+
+  .popular-cards {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .popular-cards .card {
+    margin: 0;
+  }
+
+  #accommodations-section {
+    background-color: white;
+  }
+
+  .accommodations-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Activities */
+  #activities-cards-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Footer */
+  #footer {
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    padding: 30px 0 30px 30px;
+  }
 }
