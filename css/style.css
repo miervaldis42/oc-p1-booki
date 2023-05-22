@@ -67,10 +67,6 @@ ul {
 }
 
 a {
-  height: fit-content;
-
-  display: block;
-
   text-decoration: none;
 }
 
@@ -269,15 +265,17 @@ a {
 
 .accommodations-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(max(25%, 10rem), 1fr));
   gap: 30px;
 
   margin: 30px 0;
 }
 
-.accommodations-cards .card {
-  height: fit-content;
+.accommodations-cards a {
+  display: contents;
+}
 
+.accommodations-cards .card {
   flex-direction: column;
 }
 
@@ -447,8 +445,13 @@ a {
   }
 
   .popular-cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  .popular-cards .card {
+    margin: 0;
   }
 
   .popular-cards .card-title {
