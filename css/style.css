@@ -177,12 +177,6 @@ a {
 
 #input-search-container #search-icon-button {
   display: none;
-
-  border-radius: 15px;
-}
-
-#input-search-container #search-icon-button i {
-  color: white;
 }
 
 /** Filters **/
@@ -546,14 +540,24 @@ a {
 
   #input-search-container #search-input {
     width: 100%;
+
+    border-radius: 15px;
   }
 
-  #search-text-button {
+  #input-search-container #search-text-button {
     display: none;
   }
 
   #input-search-container #search-icon-button {
-    display: block;
+    position: absolute;
+    right: 20px;
+
+    display: inline-block;
+    border-radius: 15px;
+  }
+
+  #input-search-container #search-icon-button i {
+    color: white;
   }
 
   #filter-bar {
