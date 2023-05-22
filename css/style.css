@@ -184,6 +184,8 @@ a {
   display: flex;
   align-items: center;
   gap: 15px;
+
+  white-space: nowrap;
 }
 
 #filter-bar .filter {
