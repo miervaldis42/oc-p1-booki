@@ -177,9 +177,11 @@ a {
 
 /** Filters **/
 #filter-bar {
+  max-width: 750px;
+
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 15px;
 
   white-space: nowrap;
 }
@@ -376,7 +378,7 @@ a {
 }
 
 #activities-cards-carousel .activities-card {
-  height: 439px;
+  height: 100%;
 
   flex-direction: column;
 
@@ -390,7 +392,11 @@ a {
 }
 
 #activities-cards-carousel .activities-card .activities-title {
-  padding: 20px 19px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  padding: 20px 15px;
 }
 
 /****** Footer ******/
@@ -466,19 +472,8 @@ a {
     padding-bottom: 0;
   }
 
-  #activities-cards-carousel .activities-card {
-    height: 270px;
-  }
-
   #activities-cards-carousel .activities-card img {
     height: 200px;
-  }
-
-  #activities-cards-carousel .activities-card .activities-title {
-    height: 70px;
-
-    display: flex;
-    align-items: center;
   }
 }
 
