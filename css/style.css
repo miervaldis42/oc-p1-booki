@@ -303,6 +303,8 @@ a {
   border: none;
 
   cursor: pointer;
+
+  padding-bottom: 30px;
 }
 
 /** Popular **/
@@ -439,10 +441,6 @@ a {
   .accommodations-and-popular {
     flex-direction: column;
     gap: 50px;
-  }
-
-  #accommodations-section {
-    padding-bottom: 30px;
   }
 
   #accommodations-section,
@@ -596,6 +594,7 @@ a {
   }
 
   .popular-cards {
+    display: flex;
     flex-direction: column;
 
     gap: 15px;
@@ -613,6 +612,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 15px;
+  }
+
+  #accommodations-section #show-more-button {
+    padding-bottom: 0px;
   }
 
   /* Activities */
